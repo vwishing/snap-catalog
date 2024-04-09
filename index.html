@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>LA TV Shows | Home</title>
+    <title>Sports | Home</title>
     <meta name="description" content="A Catalog of Shows Set in Los Angeles">
     <link rel="stylesheet" href="style.css" />
     <script type="text/javascript" src="scripts.js"></script>
@@ -10,28 +10,35 @@
 
 <body>
     <header class="main-header">
-        <h1 class="title">LA TV Shows</h1>
+        <h1 class="title">Sports </h1>
     </header>
     <div id="card-container">
-        
+
     </div>
     <div class="card" style="display: none;">
         <div class="card-content">
-            <h2>TV Show Title</h2>
-            <img src="" alt="TV Show Poster">
+            <h2 id="sportName">Sport Name</h2>
+            <img src="" alt="Sports Poster">
+            <a id="link" href={`https:/${newCredit}`}>Photo Credit</a>
             <ul>
-                <li>Bullet Point 1</li>
-                <li>Bullet Point 2</li>
-                <li>Bullet Point 3</li>
+                <li id="myList"></li>
+
             </ul>
         </div>
     </div>
     <div class="footer">
+        <!-- <input id="searchbar"
+               onkeyup="searchSports()"
+               type="text" name="search"
+               placeholder="Search Sports"> -->
+        <button onclick="removeFirstCard();">
+            Remove The First Card!
+        </button>
         <button onclick="quoteAlert();">
             Get A Quote!
         </button>
         <button onclick="removeLastCard();">
-            Remove A Card!
+            Remove Last Card!
         </button>
     </div>
 </body>
